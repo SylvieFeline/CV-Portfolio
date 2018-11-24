@@ -1,0 +1,163 @@
+@font-face 
+{
+    font-family: 'Allura-Regular';
+    src: url('../../polices/Allura-Regular.otf') format('opentype');
+    font-size: 4vw;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    /* min-height: 100vh; */
+    font-family: 'Courgette', cursive; 
+    background-color: black;
+}
+#blocPage{  
+    background-image: linear-gradient(to bottom, rgb(33, 95, 175),rgb(139, 166, 216));
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 600px){
+    #blocpage{
+        width: 90%;
+    }
+}
+
+/* ----------------------EN TETE--------------------- */
+header{
+    text-align: center;
+
+}
+h1{
+    font-family: 'Allura-Regular';
+    font-size: 4em;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: 1px 2px 2px white;
+}
+h1:hover{
+    text-shadow: 1px 2px 2px rgb(36, 50, 112);
+}
+header h2{
+    margin-top: 0;
+    text-shadow: 1px 2px 2px rgb(139, 166, 216);
+}
+header h2 em{
+    font-size: 0.6em;
+}
+/* --------------------- CORPS---------------------- */
+section{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    margin-left: 5%;
+    /* flex: 1; */
+}
+
+
+/* ---------------------------ACCUEIL---------------------- */
+#presentation{
+    background-image: url("../../images/photo_galaxie2.jpg");
+    background-size: 100% 100%;
+    padding-bottom: 10px;
+    margin-bottom: 5%;
+    color:white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 10px 5px rgb(36, 50, 112);
+}
+#presentation p{
+    width: 80%;
+    margin: auto;    
+}
+#presentation p em{
+    font-size: 0.8em;
+}
+#presentation #accueil:hover{
+    background-color: rgba(0, 0, 0, 0.5);   
+}
+#presentation p em:hover{
+    font-size: 1em;
+}
+
+/* -----------------------CATEGORIES----------------------- */
+#competences, #realisations, #experience, #formation, #contact {
+    /* background-color: rgb(51, 89, 216); */
+    background-image: linear-gradient(to bottom, rgb(33, 95, 175),rgb(139, 166, 216));
+    text-align: center;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-shadow: 5px 10px 5px rgb(36, 50, 112);
+}
+.categorie {
+    display: flex;
+    margin-left: 10px;
+}
+.categorie h2{
+    flex: 1;
+}
+
+#savoir, #exp, #diplomes, #formulaire {
+    /* border-top: 3px rgb(36, 50, 112) solid; */
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    display:none;
+}
+
+
+
+
+
+@media screen and (min-width: 600px){
+    /* #exp .date{
+        width: 25%;
+    }  
+     */
+}
+
+
+
+/* ----------------------expérience / formation--------------- */
+#exp, #diplomes{
+    padding-bottom: 10px
+}
+.date{ 
+    background-color:  rgb(36, 50, 112);
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+h4{
+    margin: 0;
+}
+/* ----------------------experience---------------------- */
+
+.poste{
+    margin-top: 0;
+}
+
+/* -----------------------formation----------------- */
+.lien {
+    display: none;
+}
+@media screen and (min-width: 600px){
+    .lien{
+        display : block;
+    }
+}
+
+
+/* ----------------------------------PIED DE PAGE--------------------- */
+footer{
+    background-image: linear-gradient(to top, rgb(33, 95, 175),rgb(139, 166, 216));
+  
+    color:white;
+    padding-left: 15px;
+}
