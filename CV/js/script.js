@@ -1,3 +1,16 @@
+
+// animation slides presentation
+// var bgslides = new Array();
+// bgslides[0] ="url('../../images/photo_galaxie-1.jpg')";
+// bgslides[1] ="url('../../images/photo_galaxie-2.jpg')";
+// bgslides[2] ="url('../../images/photo_galaxie-3.jpg')";
+// bgslides[3] ="url('../../images/photo_galaxie-4.jpg')";
+
+// for (i=0; i<4; i++){
+// var speed = 3000; 
+// presentation.style.backgroundImage = bgslides[i];
+// }
+
 // déclaration des variables
 var entete = document.getElementById("entete");
 var presentation = document.getElementById("presentation");
@@ -10,7 +23,6 @@ var formation = document.getElementById("formation");
 var diplomes = document.getElementById("diplomes");
 var contact = document.getElementById("contact");
 var formulaire = document.getElementById("formulaire");
-
 
 // ouverture/fermeture des catégories  au clic
 competences.addEventListener("click",function(){

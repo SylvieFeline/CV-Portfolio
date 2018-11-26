@@ -1,5 +1,4 @@
-@font-face 
-{
+@font-face {
     font-family: 'Allura-Regular';
     src: url('../../polices/Allura-Regular.otf') format('opentype');
     font-size: 4vw;
@@ -41,8 +40,11 @@ h1:hover{
     text-shadow: 1px 2px 2px rgb(36, 50, 112);
 }
 header h2{
-    margin-top: 0;
+    margin: 0 auto 5px auto;
+    padding: 0 20px;
     text-shadow: 1px 2px 2px rgb(139, 166, 216);
+    font-size: 4vw;
+    
 }
 header h2 em{
     font-size: 0.6em;
@@ -60,7 +62,7 @@ section{
 
 /* ---------------------------ACCUEIL---------------------- */
 #presentation{
-    background-image: url("../../images/photo_galaxie2.jpg");
+    background-image: url("../../images/photo_galaxie-1.jpg");
     background-size: 100% 100%;
     padding-bottom: 10px;
     margin-bottom: 5%;
@@ -82,6 +84,10 @@ section{
 #presentation p em:hover{
     font-size: 1em;
 }
+h3{
+    font-size: 3vw;
+}
+
 
 /* -----------------------CATEGORIES----------------------- */
 #competences, #realisations, #experience, #formation, #contact {
@@ -92,6 +98,9 @@ section{
     border-radius: 10px;
     margin-bottom: 5%;
     box-shadow: 5px 10px 5px rgb(36, 50, 112);
+}
+#competences:hover, #realisations:hover, #experience:hover, #formation:hover, #contact:hover {
+    background-image: linear-gradient(to bottom, rgb(4, 62, 138),rgb(91, 117, 165));
 }
 .categorie {
     display: flex;
@@ -110,15 +119,14 @@ section{
 }
 
 
-
-
-
-@media screen and (min-width: 600px){
-    /* #exp .date{
-        width: 25%;
-    }  
-     */
+/* --------------------lien vers portfolio (realisations)---------------- */
+a {
+    text-decoration: none;
+    color: black;
 }
+
+
+
 
 
 
@@ -137,6 +145,14 @@ section{
 h4{
     margin: 0;
 }
+
+@media screen and (min-width: 600px){
+    /* #exp .date{
+        width: 25%;
+    }  
+     */
+}
+
 /* ----------------------experience---------------------- */
 
 .poste{

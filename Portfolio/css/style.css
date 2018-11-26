@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Allura-Regular';
+    src: url('../../polices/Allura-Regular.otf') format('opentype');
+    font-size: 4vw;
+}
+
+body{
+    display: flex;
+    justify-content: center;  
+    font-family: 'Courgette', cursive; 
+    background-color: black;
+}
+#blocPage{  
+    background-image: linear-gradient(to bottom, rgb(33, 95, 175),rgb(139, 166, 216));
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 600px){
+    #blocpage{
+        width: 90%;
+    }
+}
+
+/* ----------------------EN TETE--------------------- */
+header{
+    text-align: center;
+
+}
+h1{
+    font-family: 'Allura-Regular';
+    font-size: 4em;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: 1px 2px 2px white;
+}
+h1:hover{
+    text-shadow: 1px 2px 2px rgb(36, 50, 112);
+}
+header h2{
+    margin: 0 auto 20px auto;
+    padding: 0 20px;
+    text-shadow: 1px 2px 2px rgb(139, 166, 216);
+    font-size: 6vw;
+    
+}
+
+/* -----------------------------------Menu--------------------------- */
+#menu{
+    position: absolute;
+    top: 80px;
+    right: 20px;
+}
+
+nav{
+    align-self: center;
+}
+
+#liens{
+    display: none;
+    
+}
+
+li{
+    text-align: center;   
+    list-style: none;   
+}
+
+
+li a{
+    text-decoration: none;
+    background-color: rgb(139, 166, 216);
+    color: rgb(36, 50, 112);
+    display: block;
+    padding: 10px 20px;
+    width: 200px;   
+    border: 1px solid rgb(36, 50, 112);
+    border-radius: 5px;
+}
+
+li a:hover{
+    background-color: rgb(36, 50, 112);
+    color: white;   
+}
+
+/* -----------------------------------CORPS--------------------------- */
+
+section {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+
+ /* ------------ effet au survol des apercus ----------------- */
+ .apercu{
+     position: relative;
+     background-color: blue;
+     border-radius: 10px;
+     text-align: center;
+    
+ }
+ .image{
+     opacity: 1;
+     display: block;
+     width: 300px;
+     height: 300px;
+     transition: .5s ease;
+     backface-visibility: hidden;
+     margin-bottom: 20px;
+     box-shadow: 5px 10px 5px rgb(36, 50, 112);
+     border-radius: 10px;
+ }
+ 
+
+ 
+.survol{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+}
+.apercu:hover .image{
+    opacity: 0.3;
+}
+.apercu:hover .survol{
+    opacity: 1;
+}
+.tech{
+    color: white;
+    font-size: 1.5em;
+}
+
+/* ----------------------------------PIED DE PAGE--------------------- */
+footer{
+    background-image: linear-gradient(to top, rgb(33, 95, 175),rgb(139, 166, 216));
+  
+    color:white;
+    padding-left: 15px;
+}

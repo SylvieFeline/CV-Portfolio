@@ -40,14 +40,14 @@
                 </div>
             </div>
 
-            <a href="../Portfolio/index.php" target="_blank" rel="noopener noreferrer"></a>
-                <div id="realisations">
+            <a href="../Portfolio/index.php" target="_blank" rel="noopener noreferrer">
+            <div id="realisations">
                 <div class="categorie">
                     <img src="../images/icone_book.png" alt="icone portfolio" width="50px"
                     title="Un petit tour à la découverte de mon portfolio ?">
                     <h2>Réalisations</h2>
                 </div>
-            </div>
+            </div></a>
            
             <div id="experience">
                 <div class="categorie">
@@ -157,7 +157,7 @@
                         <div class="etude">
                             <div class="date">1988-1990</div>
                             <div class="intitule"><h4> D.U.T. de Biologie Appliquée </h4>
-                                option Analyses Biologiques et biochimiques <br>
+                                option Analyses Biologiques et Biochimiques <br>
                                 <a href="http://iut.univ-tours.fr/departement-genie-biologique/dut-abb/dut-analyses-biologiques-et-biochimiques-abb-objectifs-389198.kjsp" target="_blank" rel="noopener noreferrer"
                                 title="Cliquez pour en savoir plus sur cette formation">
                                 I.U.T. de Tours (37)</a> </div>
