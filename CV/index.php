@@ -14,7 +14,16 @@
             <h1>Sylvie Gitton</h1>
             <h2>Développeuse web et web mobile <em> en formation </em></h2>
         </header>
-
+        <nav>
+            <ul>
+                <li> <a href="#presentation">Présentation</a></li>
+                <li> <a href="#competences">Compétences</a></li>
+                <li> <a href="../Portfolio/index.php" target="_blank" >Réalisations</a></li>
+                <li> <a href="#experience">Expériences</a></li>
+                <li> <a href="#formation">Formation</a></li>
+                <li> <a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <section>
 
             <div id="presentation">
@@ -25,17 +34,58 @@
                     <p>Je vous invite à découvrir sur ce site mon parcours quelque peu atypique
                     et j'espère que vous aurez ensuite envie de me contacter.</p><br>
                     <p><em>Contrairement à ce que l'on pourrait penser, 
-                    le survol permet parfois d'appronfondir les choses !</em></p>    
+                    le survol permet parfois d'appronfondir les choses !</em></p> 
                 </div>
             </div>
 
             <div id="competences">
                 <div class="categorie">
-                    <img src="../images/icone_competence.png" alt="icone competence" width="50px"
-                    title=" Mon savoir-faire et mon savoir-être">
+                    <img src="../images/icone_competence.png" alt="icone competence" width="50px" height="70px"
+                    title=" Mon savoir-faire">
                     <h2>Compétences</h2>
                 </div>
                 <div id="savoir">
+                    <div id="logiciels">
+                        <h5>Logiciels </h5>
+                        <img src="../images/icon_word.png" alt="icone word" title="Word">
+                        <img src="../images/icon_excel.png" alt="icone excel" title="Excel">
+                        <img src="../images/icon_powerpoint.png" alt="icone powerpoint" title="Powerpoint">
+                        <img src="../images/visual-studio-code-icon.png" alt="icone visual studio code" title="Visual Studio Code"> 
+                        <img src="../images/logo_photoshop_petit.png" alt="icone photoshop" title="Photoshop">
+                        <img src="../images/logo_gimp.png" alt="icone gimp" title="Gimp">
+                        <img src="../images/logo_github.jpg" alt="icone github" title="Git Hub">
+                    </div>
+                    <div id="langages">
+                        <h5>Langages </h5>
+                        <img src="../images/logo_HTML5.png" alt="icone HTML" title="HTML">
+                        <img src="../images/logo_CSS3.png" alt="icone CSS" title="CSS">
+                        <img src="../images/logo_js.png" alt="icone JavaScript" title="JavaScript">
+                        <img src="../images/logo_php.png" alt="icone PHP" title="PHP">
+                        <img src="../images/logo_MySQL.png" alt="icone MySQL" title="MySQL">
+
+                    </div>
+                    <div id="systExpl">
+                        <h5>Système d'exploitation </h5>
+                        <img src="../images/logo_windows_petit.png" alt="icone windows" title="Windows">
+                        <img src="../images/logo_linux.png" alt="icone linux" title="Linux">
+                    </div>
+                    <div id="bonnePrat">
+                        <h5>Bonnes pratiques </h5>
+                        <ul>
+                            <li>Responsive design</li>
+                            <li>Material design</li>
+                        </ul>   
+                    </div>
+                    <div id="autres">
+                        <h5>Autres </h5>
+                        <ul>
+                            <li>Fondamentaux de la conception</li>
+                            <li>Fondamentaux du Marketing Digital</li>
+                            <li>Méthodes de gestion de production</li>
+                            <li>Méthodes et outils de résolution de problèmes</li>
+                            <li>Rédaction de procédures opératoires</li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>
@@ -43,7 +93,7 @@
             <a href="../Portfolio/index.php" target="_blank" rel="noopener noreferrer">
             <div id="realisations">
                 <div class="categorie">
-                    <img src="../images/icone_book.png" alt="icone portfolio" width="50px"
+                    <img src="../images/icone_book.png" alt="icone portfolio" width="50px" height="70px"
                     title="Un petit tour à la découverte de mon portfolio ?">
                     <h2>Réalisations</h2>
                 </div>
@@ -51,7 +101,7 @@
            
             <div id="experience">
                 <div class="categorie">
-                    <img src="../images/icone_experience.png" alt="icone expérience" width="50px"
+                    <img src="../images/icone_experience.png" alt="icone expérience" width="50px" height="70px"
                     title="Atypique ? vous avez dit atypique ?">
                     <h2>Expériences</h2>
                 </div>
@@ -116,61 +166,73 @@
 
             <div id="formation">
                 <div class="categorie">
-                    <img src="../images/icone_diplomeb.png" alt="icone formation" width="50px"
+                    <img id="diplIcon" src="../images/icone_diplomeb.png" alt="icone formation" width="50px" height="70px"
                     title="Mes différents diplômes et certificats">
                     <h2>Formation</h2>
                 </div>
                 <div id="diplomes">
                     
                         <div class="etude">
-                            <div class="date">2018-2019</div>
-                            <div><h4>TP Développeur Web et Web mobile</h4>
-                            <a href="https://www.aformac.fr/trouver-votre-solution-formation/titre-professionnel-developpeur-web-web-mobile" target="_blank" rel="noopener noreferrer"
-                            title="Cliquez pour en savoir plus sur cette formation">
-                                Aformac Berry (18)</a></div>
-                            <div class="lien"> <em>en cours</em></div>
+                            <div class="date">sept.2018-mai 2019</div>
+                            <div class="contenu">
+                                <div class="intitule"><h4>TP Développeur Web et Web mobile</h4>
+                                <a href="https://www.aformac.fr/trouver-votre-solution-formation/titre-professionnel-developpeur-web-web-mobile" target="_blank" rel="noopener noreferrer"
+                                title="Cliquez pour en savoir plus sur cette formation">
+                                    Aformac Berry (18)</a></div>
+                                <div class="lien" id="encours"> <div id="biais"><em >en <br> cours</em></div></div>
+                            </div>
                         </div>
                         <div class="etude">
                             <div class="date">2018</div>
-                            <div><h4>Certificats de réussite Openclassrooms</h4>
-                                html5, css3, JavaScript, PHP, MySQL, Design Thinking</div>
-                            <div class="lien"><a href="openclassroom.html" target="_blank">
-                                <img src="../images/icone_diplome.png" alt="icone diplome" width="40px" title="Cliquez pour visualiser les différents certificats"></a></div>
+                            <div class="contenu">
+                                <div class="intitule"><h4>Certificats de réussite Openclassrooms</h4>
+                                    html5, css3, JavaScript, PHP, MySQL, Design Thinking</div>
+                                <div class="lien"><a href="openclassroom.html" target="_blank">
+                                    <img src="../images/icone_diplome.png" alt="icone diplome" width="40px" title="Cliquez pour visualiser les différents certificats"></a></div>
+                            </div>
                         </div>
                         <div class="etude">
                             <div class="date">avril 2018</div>
-                            <div class="intitule"><h4> Certificat Google Ateliers Numériques <br/> 
-                                     Fondamentaux du Marketing Digital </h4></div>
-                            <div class="lien"> <a href="../diplomes/2018 certifigation google.jpg" target="_blank">
-                                <img src="../images/icone_diplome.png" alt="icone diplome" width="40px" title="Cliquez pour visualiser le certificat"></a></div>   
+                            <div class="contenu">
+                                <div class="intitule"><h4> Certificat Google Ateliers Numériques <br/> 
+                                        Fondamentaux du Marketing Digital </h4></div>
+                                <div class="lien"> <a href="../diplomes/2018 certifigation google.jpg" target="_blank">
+                                    <img src="../images/icone_diplome.png" alt="icone diplome" width="40px" title="Cliquez pour visualiser le certificat"></a></div>   
+                            </div>
                         </div>
                         <div class="etude">
                             <div class="date">2015-2016</div>
-                            <div class="intitule"><h4> L.P. Gestion de la production industrielle,<br/> 
-                                     Logistique De Production <em>mention Bien</em> </h4>   
-                                    <a href="http://www.univ-orleans.fr/iut-bourges/qlio/lic-pro-gestion-de-la-production-industrielle-logistique-de-production" target="_blank" rel="noopener noreferrer"
-                                    title="Cliquez pour en savoir plus sur cette formation">
-                                     I.U.T. de Bourges (18)</a> </div>
-                            <div class="lien"> <a href="../diplomes/2016 LP LDP.jpg" target="_blank">
-                                <img src="../images/icone_diplome.png" alt="icone diplome" width="40px" title="Cliquez pour visualiser le diplôme"></a></div>       
+                            <div class="contenu">
+                                <div class="intitule"><h4> L.P. Gestion de la production industrielle,<br/> 
+                                        Logistique De Production <em>mention Bien</em> </h4>   
+                                        <a href="http://www.univ-orleans.fr/iut-bourges/qlio/lic-pro-gestion-de-la-production-industrielle-logistique-de-production" target="_blank" rel="noopener noreferrer"
+                                        title="Cliquez pour en savoir plus sur cette formation">
+                                        I.U.T. de Bourges (18)</a> </div>
+                                <div class="lien"> <a href="../diplomes/2016 LP LDP.jpg" target="_blank">
+                                    <img src="../images/icone_diplome.png" alt="icone diplome" width="40px" title="Cliquez pour visualiser le diplôme"></a></div> 
+                            </div>  
                         </div>
                         <div class="etude">
                             <div class="date">1988-1990</div>
-                            <div class="intitule"><h4> D.U.T. de Biologie Appliquée </h4>
-                                option Analyses Biologiques et Biochimiques <br>
-                                <a href="http://iut.univ-tours.fr/departement-genie-biologique/dut-abb/dut-analyses-biologiques-et-biochimiques-abb-objectifs-389198.kjsp" target="_blank" rel="noopener noreferrer"
-                                title="Cliquez pour en savoir plus sur cette formation">
-                                I.U.T. de Tours (37)</a> </div>
-                            <div class="lien"> <a href="../diplomes/1990 DUT Biologie Appliquee.jpg" target="_blank" >
-                                <img src="../images/icone_diplome.png" alt="icone diplome" width="40px" title="Cliquez pour visualiser le diplôme"></a></div>
+                            <div class="contenu">
+                                <div class="intitule"><h4> D.U.T. de Biologie Appliquée </h4>
+                                    option Analyses Biologiques et Biochimiques <br>
+                                    <a href="http://iut.univ-tours.fr/departement-genie-biologique/dut-abb/dut-analyses-biologiques-et-biochimiques-abb-objectifs-389198.kjsp" target="_blank" rel="noopener noreferrer"
+                                    title="Cliquez pour en savoir plus sur cette formation">
+                                    I.U.T. de Tours (37)</a> </div>
+                                <div class="lien"> <a href="../diplomes/1990 DUT Biologie Appliquee.jpg" target="_blank" >
+                                    <img src="../images/icone_diplome.png" alt="icone diplome" width="40px" title="Cliquez pour visualiser le diplôme"></a></div>
+                            </div>
                         </div>
                         <div class="etude">
                             <div class="date">1987-1988</div>
-                            <div class="intitule"><h4>Baccalauréat   série C</h4>
-                                 (mathématiques - sciences physiques)<br>
-                                Lycée Marguerite de Navarre, Bourges (18) </div>
-                            <div class="lien"> <a href="../diplomes/1988 BAC C .jpg" target="_blank" >
-                                <img src="../images/icone_diplome.png" alt="icone diplome" width="40px" title="Cliquez pour visualiser le diplôme"></a></div>
+                            <div class="contenu">
+                                <div class="intitule"><h4>Baccalauréat   série C</h4>
+                                    (mathématiques - sciences physiques)<br>
+                                    Lycée Marguerite de Navarre, Bourges (18) </div>
+                                <div class="lien"> <a href="../diplomes/1988 BAC C .jpg" target="_blank" >
+                                    <img src="../images/icone_diplome.png" alt="icone diplome" width="40px" title="Cliquez pour visualiser le diplôme"></a></div>
+                            </div>
                         </div>
                     
                 </div>
@@ -178,12 +240,39 @@
 
             <div id="contact">
                 <div class="categorie">
-                    <img src="../images/icone_contact.png" alt="icone contact" width="50px"
+                    <img id="contactIcon" src="../images/icone_contact.png" alt="icone contact" width="50px" height="70px"
                     title="N'hésitez plus, laissez moi un petit message !">
                     <h2>Contact</h2>
+                    <?php include ("mail.php");   ?>
                 </div>
-                <div id="formulaire">
-
+                <div id="via">
+                    <div id="coord">
+                        <div id="poste">
+                            <img src="../images/icon_env2.png" alt="icone enveloppe">
+                            <p>2395 route de Méry-es-Bois <br>
+                                Le Befiou <br>
+                                18110 St Martin d'Auxigny</p>
+                        </div>
+                        <div id="tel">
+                            <img src="../images/icon_tel2.png" alt="icone téléphone" >
+                            <p>06 60 87 13 51</p>
+                        </div>
+                        <div id="email">
+                            <img src="../images/icon_mail.png" alt="icone mail">
+                            <p>sylvieg18@orange.fr</p>
+                        </div>
+                    </div>
+                    <div id="formulaire">
+                        <form action="mail.php" method="post">
+                            <h4>M'envoyer un message :</h4>
+                            <input type="text" name="nom" placeholder="votre nom" onblur="verifNom(this)" autofocus required>
+                            <input type="text" name="prenom" placeholder="votre prenom" onblur="verifNom(this)"  required>
+                            <input type="email" name="mail" placeholder="votre adresse mail" onblur="verifMail(this)" required>
+                            <textarea name="message" cols="30" rows="8" placeholder="votre message" required></textarea>
+                            <input type="submit" value="Envoyer">
+                        </form>
+                       
+                    </div>                  
                 </div>
             </div>
 

@@ -1,16 +1,3 @@
-
-// animation slides presentation
-// var bgslides = new Array();
-// bgslides[0] ="url('../../images/photo_galaxie-1.jpg')";
-// bgslides[1] ="url('../../images/photo_galaxie-2.jpg')";
-// bgslides[2] ="url('../../images/photo_galaxie-3.jpg')";
-// bgslides[3] ="url('../../images/photo_galaxie-4.jpg')";
-
-// for (i=0; i<4; i++){
-// var speed = 3000; 
-// presentation.style.backgroundImage = bgslides[i];
-// }
-
 // déclaration des variables
 var entete = document.getElementById("entete");
 var presentation = document.getElementById("presentation");
@@ -20,9 +7,11 @@ var realisations = document.getElementById("realisations");
 var experience = document.getElementById("experience");
 var exp = document.getElementById("exp");
 var formation = document.getElementById("formation");
+var diplIcon = document.getElementById("diplIcon");
 var diplomes = document.getElementById("diplomes");
 var contact = document.getElementById("contact");
-var formulaire = document.getElementById("formulaire");
+var contactIcon = document.getElementById("contactIcon");
+var via = document.getElementById("via");
 
 // ouverture/fermeture des catégories  au clic
 competences.addEventListener("click",function(){
@@ -47,7 +36,7 @@ experience.addEventListener("click",function(){
     }  
 });
 
-formation.addEventListener("click",function(){
+diplIcon.addEventListener("click",function(){
     if (diplomes.style.display == "none"){
         absence();
         formation.style.display = "block";
@@ -58,13 +47,13 @@ formation.addEventListener("click",function(){
     }    
 });
 
-contact.addEventListener("click",function(){
-    if (formulaire.style.display == "none"){
+contactIcon.addEventListener("click",function(){
+    if (via.style.display == "none"){
         absence();
         contact.style.display = "block";
-        formulaire.style.display = "block"; 
+        via.style.display = "block"; 
     } else{
-        formulaire.style.display  = "none";
+        via.style.display  = "none";
         presence();       
     }    
 });
@@ -81,12 +70,46 @@ function presence (){
 function absence(){ 
     presentation.style.display = "none";
     competences.style.display = "none";
-    savoir.style.display  = "none"; 
     realisations.style.display = "none";
     experience.style.display = "none";
-    exp.style.display = "none";
     formation.style.display = "none";
-    diplomes.style.display = "none";
     contact.style.display = "none";  
-    formulaire.style.display = "none"; 
 }
+
+
+// vérification du formulaire
+
+
+// verification saisie nom et prenom
+function verifNom(champ){
+    console.log(champ.value);
+    for(var i = 0; i < champ.value.length; i++){
+        var lettre = champ.value[i];
+        console.log(lettre);
+        if ((lettre == '0') || (lettre == '1') || (lettre == '2') || (lettre == '3') ||
+             (lettre == '4') || (lettre == '5') || (lettre == '6') || (lettre == '7') ||
+             (lettre == '8') || (lettre == '9') || (lettre == '!') || (lettre == ',') ||
+             (lettre == '_') || (lettre == '/') || (lettre == '\\') || (lettre == '"') ){
+                 champ.style.backgroundColor = "rgb(250,100,80)";
+                 champ.value = "";
+                 champ.placeholder = "chiffres et caractères spéciaux non autorisés !";
+                
+             } else {
+                 champ.style.backgroundColor = "rgb(116,235,116";               
+                 
+             }
+    }  
+};
+// verification email
+
+function verifMail(champ){
+    var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+    if(!regex.test(champ.value)){
+     champ.style.backgroundColor= "rgb(250,100,80)";
+     champ.value = "";
+     champ.placeholder = "adresse non valide";
+    } else {
+     champ.style.backgroundColor= "rgb(116,235,116";
+    }
+ }   
+
