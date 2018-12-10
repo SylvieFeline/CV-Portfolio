@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Courgette|Julee" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
     <title>Curriculum Vitae</title>
 </head>
-<body>
+<body onload="document.location='#entete';">
     <div id="blocPage">
         <header id="entete">
             <h1>Sylvie Gitton</h1>
@@ -16,93 +17,96 @@
         </header>
         <nav>
             <ul>
-                <li> <a href="#presentation">Présentation</a></li>
-                <li> <a href="#competences">Compétences</a></li>
-                <li> <a href="../Portfolio/index.php" target="_blank" >Réalisations</a></li>
-                <li> <a href="#experience">Expériences</a></li>
-                <li> <a href="#formation">Formation</a></li>
-                <li> <a href="#contact">Contact</a></li>
+                <li id="lien1"> <a href="#entete">Présentation</a></li>
+                <li id="lien2" title="mon savoir-faire"> <a href="#competences">Compétences</a></li>
+                <li title="lien vers mon portfolio"> <a href="../Portfolio/index.php" target="_blank" >Réalisations</a></li>
+                <li id="lien4" title="Des compétences transférables !"> <a href="#experience">Expériences</a></li>
+                <li id="lien5" title="Mes diplômes et certificats"> <a href="#formation">Formation</a></li>
+                <li id="lien6" title="N'hésitez pas à me laisser un message"> <a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <section>
 
             <div id="presentation">
                 <div id="accueil">
-                    <h3>Bienvenue sur mon Curriculum Vitae <em> on line </em></h3>
-                    <p>Je me suis reconvertie dans le monde du numérique afin de pouvoir enfin m'épanouir 
-                        dans la création d'applications et de sites web.</p>
-                    <p>Je vous invite à découvrir sur ce site mon parcours quelque peu atypique
-                    et j'espère que vous aurez ensuite envie de me contacter.</p><br>
-                    <p><em>Contrairement à ce que l'on pourrait penser, 
-                    le survol permet parfois d'appronfondir les choses !</em></p> 
+                    <h3>Bienvenue sur mon <br> Curriculum Vitae <em> on line </em></h3>
+                    <p>Je me suis reconvertie dans le monde du numérique afin de prendre part à sa magie  
+                    et concevoir des sites ou des applications dynamiques et fluides.</p>
+                    <p>Ce site vous permez d'avoir un aperçu de mon savoir faire actuel tout en découvrant mon parcours.</p>
+                    <br>   
+                    <p><em>N'hésitez pas à me laisser un message pour me faire part de vos impressions.<br>
+                        C'est avec des critiques constructives que l'on s'améliore !</em></p> 
                 </div>
             </div>
 
-            <div id="competences">
+            <div id="competences" >
                 <div class="categorie">
                     <img src="../images/icone_competence.png" alt="icone competence" width="50px" height="70px"
                     title=" Mon savoir-faire">
                     <h2>Compétences</h2>
                 </div>
                 <div id="savoir">
-                    <div id="logiciels">
-                        <h5>Logiciels </h5>
-                        <img src="../images/icon_word.png" alt="icone word" title="Word">
-                        <img src="../images/icon_excel.png" alt="icone excel" title="Excel">
-                        <img src="../images/icon_powerpoint.png" alt="icone powerpoint" title="Powerpoint">
-                        <img src="../images/visual-studio-code-icon.png" alt="icone visual studio code" title="Visual Studio Code"> 
-                        <img src="../images/logo_photoshop_petit.png" alt="icone photoshop" title="Photoshop">
-                        <img src="../images/logo_gimp.png" alt="icone gimp" title="Gimp">
-                        <img src="../images/logo_github.jpg" alt="icone github" title="Git Hub">
-                    </div>
-                    <div id="langages">
-                        <h5>Langages </h5>
-                        <img src="../images/logo_HTML5.png" alt="icone HTML" title="HTML">
-                        <img src="../images/logo_CSS3.png" alt="icone CSS" title="CSS">
-                        <img src="../images/logo_js.png" alt="icone JavaScript" title="JavaScript">
-                        <img src="../images/logo_php.png" alt="icone PHP" title="PHP">
-                        <img src="../images/logo_MySQL.png" alt="icone MySQL" title="MySQL">
+                    <div id="bloc1">
+                        <div id="logiciels">
+                            <h5>Logiciels </h5>
+                            <img src="../images/icon_word.png" alt="icone word" title="Word">
+                            <img src="../images/icon_excel.png" alt="icone excel" title="Excel">
+                            <img src="../images/icon_powerpoint.png" alt="icone powerpoint" title="Powerpoint">
+                            <img src="../images/visual-studio-code-icon.png" alt="icone visual studio code" title="Visual Studio Code"> 
+                            <img src="../images/logo_photoshop_petit.png" alt="icone photoshop" title="Photoshop">
+                            <img src="../images/logo_gimp.png" alt="icone gimp" title="Gimp">
+                            <img src="../images/logo_github.jpg" alt="icone github" title="Git Hub">
+                        </div>
+                        <div id="langages">
+                            <h5>Langages </h5>
+                            <img src="../images/logo_HTML5.png" alt="icone HTML" title="HTML">
+                            <img src="../images/logo_CSS3.png" alt="icone CSS" title="CSS">
+                            <img src="../images/logo_js.png" alt="icone JavaScript" title="JavaScript">
+                            <img src="../images/logo_php.png" alt="icone PHP" title="PHP">
+                            <img src="../images/logo_MySQL.png" alt="icone MySQL" title="MySQL">
 
+                        </div>
+                        <div id="systExpl">
+                            <h5>Système d'exploitation </h5>
+                            <img src="../images/logo_windows_petit.png" alt="icone windows" title="Windows">
+                            <img src="../images/logo_linux.png" alt="icone linux" title="Linux">
+                        </div>
                     </div>
-                    <div id="systExpl">
-                        <h5>Système d'exploitation </h5>
-                        <img src="../images/logo_windows_petit.png" alt="icone windows" title="Windows">
-                        <img src="../images/logo_linux.png" alt="icone linux" title="Linux">
+                    <div id="bloc2">    
+                        <div id="bonnePrat">
+                            <h5>Bonnes pratiques </h5>
+                            <ul>
+                                <li>Responsive design</li>
+                                <li>Material design</li>
+                            </ul>   
+                        </div>
+                        <div id="autres">
+                            <h5>Autres </h5>
+                            <ul>
+                                <li>Fondamentaux de la conception</li>
+                                <li>Fondamentaux du Marketing Digital</li>
+                                <li>Méthodes de gestion de production</li>
+                                <li>Méthodes et outils de résolution de problèmes</li>
+                                <li>Rédaction de procédures opératoires</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div id="bonnePrat">
-                        <h5>Bonnes pratiques </h5>
-                        <ul>
-                            <li>Responsive design</li>
-                            <li>Material design</li>
-                        </ul>   
-                    </div>
-                    <div id="autres">
-                        <h5>Autres </h5>
-                        <ul>
-                            <li>Fondamentaux de la conception</li>
-                            <li>Fondamentaux du Marketing Digital</li>
-                            <li>Méthodes de gestion de production</li>
-                            <li>Méthodes et outils de résolution de problèmes</li>
-                            <li>Rédaction de procédures opératoires</li>
-                        </ul>
-                    </div>
-
                 </div>
             </div>
 
             <a href="../Portfolio/index.php" target="_blank" rel="noopener noreferrer">
             <div id="realisations">
                 <div class="categorie">
-                    <img src="../images/icone_book.png" alt="icone portfolio" width="50px" height="70px"
-                    title="Un petit tour à la découverte de mon portfolio ?">
+                    <img src="../images/icone_book.png" alt="icone portfolio"
+                    title="Un petit tour à la découverte de mon portfolio ">
                     <h2>Réalisations</h2>
                 </div>
             </div></a>
            
-            <div id="experience">
+            <div id="experience" >
                 <div class="categorie">
-                    <img src="../images/icone_experience.png" alt="icone expérience" width="50px" height="70px"
-                    title="Atypique ? vous avez dit atypique ?">
+                    <img src="../images/icone_experience.png" alt="icone expérience" 
+                    title="Des compétences transférables !">
                     <h2>Expériences</h2>
                 </div>
                 <div id="exp">
@@ -164,9 +168,9 @@
                 </div>
             </div>
 
-            <div id="formation">
-                <div class="categorie">
-                    <img id="diplIcon" src="../images/icone_diplomeb.png" alt="icone formation" width="50px" height="70px"
+            <div id="formation" >
+                <div class="categorie" title="Cliquez sur l'icône pour afficher le contenu">
+                    <img id="diplIcon" src="../images/icone_diplomeb.png" alt="icone formation" 
                     title="Mes différents diplômes et certificats">
                     <h2>Formation</h2>
                 </div>
@@ -238,9 +242,9 @@
                 </div>
             </div>
 
-            <div id="contact">
-                <div class="categorie">
-                    <img id="contactIcon" src="../images/icone_contact.png" alt="icone contact" width="50px" height="70px"
+            <div id="contact" >
+                <div class="categorie" title="Cliquez sur l'icône pour afficher le contenu">
+                    <img id="contactIcon" src="../images/icone_contact.png" alt="icone contact" 
                     title="N'hésitez plus, laissez moi un petit message !">
                     <h2>Contact</h2>
                     <?php include ("mail.php");   ?>
@@ -263,6 +267,12 @@
                         </div>
                     </div>
                     <div id="formulaire">
+                        <div id="portrait">
+                            <img class="image" src="../images/dessin_2009_014_Sylvie_.jpg" alt="portrait">
+                            <div class="survol">
+                                <img src="../images/identite.JPG" alt="">
+                            </div>
+                        </div>
                         <form action="mail.php" method="post">
                             <h4>M'envoyer un message :</h4>
                             <input type="text" name="nom" placeholder="votre nom" onblur="verifNom(this)" autofocus required>
@@ -282,7 +292,28 @@
             <p>créé en novembre 2018</p>
         </footer>
     </div>
-
+    
+    
+    <script>
+            $(function() {
+        /**
+        * Smooth scrolling to page anchor on click
+        **/
+        $("a[href*='#']:not([href='#'])").click(function() {
+            if (
+                location.hostname == this.hostname
+                && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")
+            ) {
+                var anchor = $(this.hash);
+                anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
+                if ( anchor.length ) {
+                    $("html, body").animate( { scrollTop: anchor.offset().top-100 }, 1500);
+                }
+            }
+        });
+    });
+    </script>
+    
     <script src="js/script.js"></script>
 </body>
 </html>

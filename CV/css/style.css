@@ -48,9 +48,7 @@ header h2{
     font-size: 4vw;
     
 }
-header h2 em{
-    font-size: 0.6em;
-}
+
 @media screen and (min-width: 600px){
     h1{
         font-size: 8vw;
@@ -71,31 +69,44 @@ nav{
         margin: auto;
         position: sticky;
         top: 0;
-        
+        height: 80px;
     }
     nav ul{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         width: 100%;
-        
-        /* font-size: 2em; */
+        height: 100%;
+        font-size: 1.5em;
         padding-top: 0;
-        margin: 0;
+        margin: 0 0 10px 0;
+        padding-left: 0;
     }
 
     nav li{
         list-style: none;
         padding: 10px;
         width: 17%;
+        line-height: 60px;
         text-align: center;
-        border: 1px solid rgb(36, 50, 112);
-        background-image: linear-gradient(to bottom, rgb(33, 95, 175),rgb(139, 166, 216));
+        background-image: linear-gradient(to bottom, rgb(36, 50, 112),rgb(139, 166, 216));
+    }
+    nav li:first-of-type{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    nav li:last-of-type{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    nav li:hover{
+        color: white;
+        background-image: linear-gradient(to bottom, rgb(36, 50, 112),rgb(33, 95, 175));   
     }
 
     nav a{
-        text-decoration: none
+        text-decoration: none;
     }
+    
 }
 
 /* --------------------- CORPS---------------------- */
@@ -124,17 +135,15 @@ section{
     width: 80%;
     margin: auto;    
 }
-#presentation p em{
-    font-size: 0.8em;
-}
+
 #presentation #accueil:hover{
-    background-color: rgba(0, 0, 0, 0.5);   
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-size: 100% 100%; 
 }
-#presentation p em:hover{
-    font-size: 1em;
-}
+
 h3{
     font-size: 6vw;
+    text-shadow: 1px 2px 2px black;
 }
 @media screen and (max-height: 600px){
     #presentation{
@@ -154,6 +163,24 @@ h3{
        display: none; 
     }
 }
+@media screen and (min-width: 600px){
+    #presentation{
+        margin-top: 20px;
+        
+    }
+    #accueil{
+        padding: 50px;
+    }
+    #presentation p{
+        font-size: 1.5em;
+        padding: 20px;
+    }
+    h3{
+        font-size: 4em;
+        margin: auto;
+    }
+}
+
 
 /* -----------------------CATEGORIES----------------------- */
 #competences, #realisations, #experience, #formation, #contact {
@@ -174,6 +201,10 @@ h3{
 .categorie h2{
     flex: 1;
 }
+.categorie img{
+    width: 50px;
+    height: 70px;
+}
 
 #savoir, #exp, #diplomes, #via {
     width: 90%;
@@ -185,6 +216,14 @@ h3{
     #savoir, #exp, #diplomes, #via{
         display: block;
     }
+    .categorie img{
+        width: 70px;
+        height: auto;
+    }
+    .categorie h2{
+        font-size: 2em;
+    }
+    
 }
 
 /* ----------------------Compétences------------------- */
@@ -203,7 +242,9 @@ h5{
     padding-left: 20px;
     text-align: left;
 }
-
+@media screen and (min-width: 600px){
+    
+}
 
 
 /* --------------------lien vers portfolio (realisations)---------------- */
@@ -274,13 +315,7 @@ h4{
     
 }
 /* ------------------------ CONTACT ----------------- */
-#via img{
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    box-shadow: 0 2px 2px rgb(36, 50, 112);
-    border-radius: 50%;
-}
+
 #via{
     border-top: 3px rgb(36, 50, 112) solid;
     margin-top: 0;
@@ -290,7 +325,13 @@ h4{
     flex-direction: column;
     padding-left: 10px;
 }
-
+#coord img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    box-shadow: 0 2px 2px rgb(36, 50, 112);
+    border-radius: 50%;
+}
 #poste, #tel, #email{
     display:flex;
     flex-direction: row;
@@ -301,13 +342,56 @@ h4{
     width: 45px;
     height: 45px;
 }
+#portrait img{
+    display: none;
+}
 @media screen and (min-width: 600px){
     #coord{
         flex-direction: row;
         justify-content: space-around;
+        font-size: 1.2em;
+        
     }
     #tel, #email{
         margin-top: 20px;
+    }
+    #formulaire{
+        display: flex;
+        flex-direction: row;
+        padding:0 40px 40px 40px;
+        align-items: center;
+    }
+    #formulaire h4{
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    #portrait{
+        width: 40%;
+        position: relative;
+
+    }
+    #portrait img{
+        opacity: 1;
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        box-shadow: 5px 10px 10px black;
+    }
+    #formulaire .survol{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+    #portrait:hover .image{
+        opacity: 0;
+    }
+    #portrait:hover .survol{
+        opacity:1;
     }
 }
 
@@ -328,9 +412,22 @@ input[type=submit]{
     margin-bottom: 10px;
 }    
 @media screen and (min-width: 600px){
+    #coord{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
     input[type=submit]{
         width: 200px;
     }
+    input{
+        height: 40px;
+        font-size:1.2em;
+    }
+    textarea{
+        font-size:1.2em;
+    }
+
+
 }
 
 /* --------------------------PIED DE PAGE--------------------- */
