@@ -18,13 +18,7 @@ body{
     flex-direction: column;
     margin: auto;
 }
-@media screen and (min-width: 600px){
-    #blocpage{
-        width: 80%;
-        
-    }
-    
-}
+
 
 /* ----------------------EN TETE--------------------- */
 header{
@@ -48,8 +42,11 @@ header h2{
     font-size: 4vw;
     
 }
+header h2 em{
+    font-size: 2vw;
+}
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 1000px){
     h1{
         font-size: 8vw;
     }
@@ -62,7 +59,7 @@ header h2{
 nav{
     display: none;
 }
-@media screen and (min-width: 600px){
+@media screen and (min-width: 1000px){
     nav{
         display: block;
         width: 90%;
@@ -131,26 +128,27 @@ section{
     border-radius: 10px;
     box-shadow: 5px 10px 5px rgb(36, 50, 112);
 }
-#presentation p{
-    width: 80%;
-    margin: auto;    
-}
 
 #presentation #accueil:hover{
     background-color: rgba(0, 0, 0, 0.5); 
     background-size: 100% 100%; 
+    border-radius: 10px;
+}
+#presentation p{
+    width: 80%;
+    margin: auto;    
 }
 
 h3{
     font-size: 6vw;
     text-shadow: 1px 2px 2px black;
 }
-@media screen and (max-height: 600px){
+@media screen and (max-height: 600px) and (max-width: 700px){
     #presentation{
         display: none;
     }
 }
-@media screen and (min-height: 600px) and (max-height:750px){
+@media screen and (min-height: 600px) and (max-height:750px)and (max-width: 700px){
     #accueil :nth-child(2),#accueil :nth-child(3), #accueil em, #accueil br{
         display: none; 
      }
@@ -158,12 +156,12 @@ h3{
         padding: 0 10px;
     }
 }
-@media screen and (min-height: 750px) and (max-width: 600px){
+@media screen and (min-height: 750px) and (max-width: 1000px){
     #accueil :nth-child(3), #accueil em{
        display: none; 
     }
 }
-@media screen and (min-width: 600px){
+@media screen and (min-width: 1000px){
     #presentation{
         margin-top: 20px;
         
@@ -212,16 +210,16 @@ h3{
     margin-top: 10px;
     display:none;
 }
-@media screen and (min-width: 600px){
+@media screen and (min-width: 1000px){
     #savoir, #exp, #diplomes, #via{
         display: block;
     }
     .categorie img{
-        width: 70px;
-        height: auto;
+        width: 100px;
+        height: 140px;
     }
     .categorie h2{
-        font-size: 2em;
+        font-size: 3em;
     }
     
 }
@@ -242,8 +240,30 @@ h5{
     padding-left: 20px;
     text-align: left;
 }
-@media screen and (min-width: 600px){
-    
+@media screen and (min-width: 1000px){
+    #savoir{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 1.2em;
+        padding-bottom: 20px;
+    }
+    #bloc1, #bloc2{
+        width:40%;
+
+    }
+    #savoir img{
+        width: auto;
+        height: 70px;
+        padding-right: 20px;
+    }
+    h5{
+        height: 30px;
+        font-size: 1.2em;
+    }
+    #bloc2 ul{
+        padding-left: 50px;
+    }
 }
 
 
@@ -254,7 +274,7 @@ a {
 }
 
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 1000px){
     #realisations{
         display: none;
     }
@@ -264,7 +284,7 @@ a {
 #exp, #diplomes{
     padding-bottom: 10px
 }
-.date{ 
+.dateE, .dateF{ 
     background-color:  rgb(36, 50, 112);
     border-radius: 10px;
     color: white;
@@ -275,22 +295,11 @@ a {
 h4{
     margin: 0;
 }
-
-@media screen and (min-width: 600px){
-    /* #exp .date{
-        width: 25%;
-    }  
-     */
+h4 em{
+    font-size: 0.8em;
 }
 
-/* ----------------------experience---------------------- */
-
-.poste{
-    margin-top: 0;
-}
-
-/* -----------------------formation----------------- */
-.contenu{
+.contenu, .poste{
     display: flex;
     flex-direction: row;
 }
@@ -298,22 +307,125 @@ h4{
     flex: 1;
 }
 
+.intitule img{
+    width: 20px;
+}
+.logoForm img{
+    height: 40px;
+    margin-right: 20px;
+}
+
 #encours{
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px 0;
-    margin-top: 2px;
+    margin-top: 2px; 
     width: 40px;
-    
 }
+.dipl img{
+    width: 40px;
+}
+
+
 #biais{
     transform:rotate(-40deg);
     margin-left: -10px;
 }
 
-@media screen and (min-width: 600px){
+
+@media screen and (min-width: 1000px){
+     .dateE, .dateF{
+        background-color:rgba(36, 50, 112, 0) ;
+        height: 100%;
+        background-image: linear-gradient(to left,rgb(33, 95, 175),rgb(139, 166, 216));
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        line-height: 100px;
+        color:rgb(36, 50, 112);
+        margin-top: 0;
+        border-right: 2px solid rgb(33, 95, 175);
+    }
+    .dateE{
+        width: 40%; 
+    }  
+    .dateF{
+        width: 30%;
+    }
+    
+    .emploi, .etude{
+        display: flex;
+        margin-bottom: 10px;
+        height: 100px;
+        box-shadow: 0 2px 2px rgb(36, 50, 112);
+        border-radius: 10px;
+        
+    }
+    .poste, .contenu{    
+        text-align: center;
+        background-image: linear-gradient(to right,rgb(33, 95, 175),rgb(139, 166, 216));
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        align-items: center;
+    }
+    .poste{
+        width: 60%;
+    }
+    .contenu{
+        width: 70%;
+    }
+    #exp, #diplomes{
+        font-size: 1.2em;
+    }
+    .dipl img{
+        width: 70px;
+        margin-right: 20px;
+    }
+    #encours{
+        width: 50px;
+        margin-right: 30px;
+    }
     
 }
+
+@media screen and (min-width: 1300px){
+    .imgLogo img{
+        width: 100px;
+        margin-right: 20px;
+    }
+    .logoForm img{
+        height: 70px;
+        margin-right: 20px;
+    }
+    .intitule{
+        flex: 2;
+    }
+    .logoForm{
+        flex:1;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px){
+    .imgLogo img{
+        width: 80px;
+        margin-right: 10px;
+    }
+    .logoForm img{
+        height: 50px;
+        margin-right: 20px;
+    }
+    .intitule{
+        flex: 2;
+    }
+    .logoForm{
+        flex:1;
+    }
+}
+@media screen and (max-width: 1200px){
+    .imgLogo img,.logoForm img{
+        display: none;
+    }
+    
+}
+
 /* ------------------------ CONTACT ----------------- */
 
 #via{
@@ -345,7 +457,7 @@ h4{
 #portrait img{
     display: none;
 }
-@media screen and (min-width: 600px){
+@media screen and (min-width: 1000px){
     #coord{
         flex-direction: row;
         justify-content: space-around;
@@ -410,8 +522,10 @@ input, textarea{
 input[type=submit]{
     width: 70px;
     margin-bottom: 10px;
+    font-weight: bold;
 }    
-@media screen and (min-width: 600px){
+    
+@media screen and (min-width: 1000px){
     #coord{
         margin-top: 30px;
         margin-bottom: 30px;
