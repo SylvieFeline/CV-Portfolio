@@ -1,6 +1,7 @@
 // déclaration des variables
 var entete = document.getElementById("entete");
 var presentation = document.getElementById("presentation");
+var textPresent = document.getElementById("textPresent");
 var competences = document.getElementById("competences");
 var savoir = document.getElementById("savoir");
 var realisations = document.getElementById("realisations");
@@ -16,6 +17,14 @@ var via = document.getElementById("via");
 // ouverture/fermeture des catégories  au clic  pour version MOBILE
 
 if ($(window).width()<1000){
+    presentation.addEventListener("click",function(){
+        if (textPresent.style.display == "none"){
+            textPresent.style.display = "block";        
+        } else{
+            textPresent.style.display = "none"; 
+        }  
+    });
+
     competences.addEventListener("click",function(){
         if (savoir.style.display == "none"){
             absence();
@@ -62,6 +71,7 @@ if ($(window).width()<1000){
 
     function presence (){
         presentation.style.display = "block";
+        textPresent.style.display = "none";
         competences.style.display = "block";
         realisations.style.display = "block";
         experience.style.display = "block";
@@ -169,9 +179,11 @@ lien1.addEventListener("click",function(){
         lien5.style.backgroundImage = BGimage; 
         lien6.style.backgroundImage = BGimage; 
         lien1.style.backgroundColor = "rgb(36, 50, 112)";
+        lien1.style.color = "white";
         lien1.style.backgroundImage = "none";        
     } else {
         lien1.style.backgroundImage = BGimage; 
+        lien1.style.color = "black";
     }  
 })
 
@@ -182,9 +194,11 @@ lien2.addEventListener("click",function(){
         lien5.style.backgroundImage = BGimage; 
         lien6.style.backgroundImage = BGimage; 
         lien2.style.backgroundColor = "rgb(36, 50, 112)";
+        lien2.style.color = "white";
         lien2.style.backgroundImage = "none";        
     } else {
         lien2.style.backgroundImage = BGimage; 
+        lien2.style.color = "black";
     }  
 })
 
@@ -195,9 +209,11 @@ lien4.addEventListener("click",function(){
         lien5.style.backgroundImage = BGimage; 
         lien6.style.backgroundImage = BGimage; 
         lien4.style.backgroundColor = "rgb(36, 50, 112)";
+        lien4.style.color = "white";
         lien4.style.backgroundImage = "none";        
     } else {
         lien4.style.backgroundImage = BGimage; 
+        lien4.style.color = "black";
     }  
 })
 
@@ -208,9 +224,11 @@ lien5.addEventListener("click",function(){
         lien4.style.backgroundImage = BGimage;  
         lien6.style.backgroundImage = BGimage; 
         lien5.style.backgroundColor = "rgb(36, 50, 112)";
+        lien5.style.color = "white";
         lien5.style.backgroundImage = "none";        
     } else {
         lien5.style.backgroundImage = BGimage; 
+        lien5.style.color = "black";
     }  
 })
 
@@ -221,9 +239,11 @@ lien6.addEventListener("click",function(){
         lien4.style.backgroundImage = BGimage; 
         lien5.style.backgroundImage = BGimage; 
         lien6.style.backgroundColor = "rgb(36, 50, 112)";
+        lien6.style.color = "white";
         lien6.style.backgroundImage = "none";        
     } else {
         lien6.style.backgroundImage = BGimage; 
+        lien6.style.color = "black";
     }  
 })
 

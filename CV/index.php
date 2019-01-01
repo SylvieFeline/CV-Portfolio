@@ -30,12 +30,14 @@
             <div id="presentation">
                 <div id="accueil">
                     <h3>Bienvenue sur mon <br> Curriculum Vitae <em> on line </em></h3>
-                    <p>Je me suis reconvertie dans le monde du numérique afin de prendre part à sa magie  
-                    et concevoir des sites ou des applications dynamiques et fluides.</p>
-                    <p>Ce site vous permez d'avoir un aperçu de mon savoir faire actuel tout en découvrant mon parcours.</p>
-                    <br>   
-                    <p><em>N'hésitez pas à me laisser un message pour me faire part de vos impressions.<br>
-                        C'est avec des critiques constructives que l'on s'améliore !</em></p> 
+                    <div id="textPresent">  
+                        <p>Je me suis reconvertie dans le monde du numérique afin de prendre part à sa magie  
+                        et concevoir des sites ou des applications dynamiques et fluides.</p>
+                        <p>Ce site vous permez d'avoir un aperçu de mon savoir faire actuel tout en découvrant mon parcours.</p>
+                        <br>   
+                        <p><em>N'hésitez pas à me laisser un message pour me faire part de vos impressions.<br>
+                            C'est avec des critiques constructives que l'on s'améliore !</em></p> 
+                    </div> 
                 </div>
             </div>
 
@@ -223,6 +225,16 @@
                             </div>
                         </div>
                         <div class="etude">
+                            <div class="dateF"> décembre 2018</div>
+                            <div class="contenu">
+                                <div class="intitule"><h4>Attestation Secnum Academie</h4>
+                                   initiation à la cybersécurité </div>
+                                <div class="logoForm"> <img src="../images/logo_secnum.png" alt="logo secnum académie"></div>
+                                <div class="dipl"><a href="../diplomes/attestation_secnumacademie.pdf" target="_blank">
+                                    <img src="../images/icone_diplome.png" alt="icone diplome" title="Cliquez pour visualiser l'attestation"></a></div>
+                            </div>
+                        </div>
+                        <div class="etude">
                             <div class="dateF">2018</div>
                             <div class="contenu">
                                 <div class="intitule"><h4>Certificats de réussite Openclassrooms</h4>
@@ -320,7 +332,7 @@
                         </div>
                         <form action="mail.php" method="post" >
                             <h4>M'envoyer un message :</h4>
-                            <input id="nom" type="text" name="nom" placeholder="votre nom" onblur="verifNom(this)" autofocus required>
+                            <input id="nom" type="text" name="nom" placeholder="votre nom" onblur="verifNom(this)" required>
                             <input id="prenom" type="text" name="prenom" placeholder="votre prenom" onblur="verifNom(this)"  required>
                             <input id="mail" type="email" name="mail" placeholder="votre adresse mail" onblur="verifMail(this)" required>
                             <textarea id="message" name="message" cols="30" rows="8" placeholder="votre message" onblur="verifText(this)" required></textarea>

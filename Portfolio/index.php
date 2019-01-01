@@ -154,7 +154,7 @@
                             title="Lien vers le 'repositorie' Git Hub" ></a></div>
                     <div class="test">
                         <a href="../projets/gen_puissance4/Source/index.html" target="_blank">
-                            <button class="ipad" title="Voir le projet">
+                            <button title="Voir le projet">
                             Jouer</button></a>
                     </div>
                     <div class="apercu" id="ap5">

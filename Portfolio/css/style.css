@@ -189,11 +189,7 @@ button{
     border-radius: 50%;
     width: 50px;
 }
-@media screen and (min-width: 700px){
-    .ipad{
-        display: block;
-    }
-} 
+
 @media screen and (min-width: 1000px){
     .noMobile{
         display: block;

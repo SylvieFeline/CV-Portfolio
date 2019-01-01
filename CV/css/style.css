@@ -62,7 +62,7 @@ nav{
 @media screen and (min-width: 1000px){
     nav{
         display: block;
-        width: 90%;
+        width: 92%;
         margin: auto;
         position: sticky;
         top: 0;
@@ -139,37 +139,26 @@ section{
     margin: auto;    
 }
 
-h3{
-    font-size: 6vw;
+#accueil h3{
+    font-size: 5vw;
     text-shadow: 1px 2px 2px black;
 }
-@media screen and (max-height: 600px) and (max-width: 700px){
-    #presentation{
-        display: none;
-    }
+
+#textPresent{
+    display: none; 
 }
-@media screen and (min-height: 600px) and (max-height:750px)and (max-width: 700px){
-    #accueil :nth-child(2),#accueil :nth-child(3), #accueil em, #accueil br{
-        display: none; 
-     }
-    #accueil h3{
-        padding: 0 10px;
-    }
-}
-@media screen and (min-height: 750px) and (max-width: 1000px){
-    #accueil :nth-child(3), #accueil em{
-       display: none; 
-    }
-}
+
+
+
 @media screen and (min-width: 1000px){
     #presentation{
-        margin-top: 20px;
-        
+        margin-top: 20px;   
     }
     #accueil{
         padding: 50px;
     }
-    #presentation p{
+    #textPresent{
+        display: block;
         font-size: 1.5em;
         padding: 20px;
     }
@@ -190,7 +179,7 @@ h3{
     box-shadow: 5px 10px 5px rgb(36, 50, 112);
 }
 #competences:hover, #realisations:hover, #experience:hover, #formation:hover, #contact:hover {
-    background-image: linear-gradient(to bottom, rgb(4, 62, 138),rgb(91, 117, 165));
+    background-image: linear-gradient(to bottom, rgb(6, 128, 243),rgb(120, 184, 245));
 }
 .categorie {
     display: flex;
@@ -337,7 +326,7 @@ h4 em{
      .dateE, .dateF{
         background-color:rgba(36, 50, 112, 0) ;
         height: 100%;
-        background-image: linear-gradient(to left,rgb(33, 95, 175),rgb(139, 166, 216));
+        background-image: linear-gradient(to left,rgb(33, 95, 175),rgb(182, 202, 240));
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         line-height: 100px;
@@ -362,7 +351,7 @@ h4 em{
     }
     .poste, .contenu{    
         text-align: center;
-        background-image: linear-gradient(to right,rgb(33, 95, 175),rgb(139, 166, 216));
+        background-image: linear-gradient(to right,rgb(33, 95, 175),rgb(182, 202, 240));
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         align-items: center;
